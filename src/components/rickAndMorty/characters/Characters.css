@@ -1,0 +1,4 @@
+.characters {
+    display: flex;
+    justify-content: space-evenly;
+}
