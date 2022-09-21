@@ -1,0 +1,4 @@
+.usersBlock {
+    display: flex;
+    flex-direction: column;
+}
