@@ -1,0 +1,19 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    color: darkviolet;
+    background:lemonchiffon;
+    margin: 0 auto;
+}
+a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+a:hover {
+    color: lightskyblue;
+}
+h2 {
+    background: seashell;
+}

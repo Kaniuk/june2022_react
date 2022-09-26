@@ -1,0 +1,9 @@
+.todos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+
+    background: lightcyan;
+    padding-top: 20px;
+}
