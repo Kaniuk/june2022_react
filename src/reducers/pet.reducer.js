@@ -5,22 +5,20 @@ const init = {
     dogs: []
 };
 const reducer = (state, action) => {
+    const petKey = action.payload.pet + 's';
+
     switch (action.type) {
-        case 'ADD' : {
-            const petKey = action.payload.pet + 's';
+        case 'ADD' :
             return {
                 ...state,
                 [petKey]: [...state[petKey], action.payload.name]
             };
-        }
-        case 'DELETE' : {
-            const petKey = action.payload.pet + 's';
 
+        case 'DELETE' :
             return {
                 ...state,
                 [petKey]: [...state[petKey].filter((pet, index) => index !== action.payload.id)]
             };
-        }
     }
 };
 
