@@ -1,0 +1,9 @@
+.pets {
+    display: flex;
+    justify-content: center;
+    gap:20px
+}
+.list {
+    display: flex;
+    flex-direction: column;
+}
