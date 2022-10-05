@@ -1,0 +1,9 @@
+const GET_USERS = 'GET_USERS';
+const GET_POSTS = 'GET_POSTS';
+const GET_COMMENTS = 'GET_COMMENTS';
+
+export {
+    GET_USERS,
+    GET_POSTS,
+    GET_COMMENTS
+};
