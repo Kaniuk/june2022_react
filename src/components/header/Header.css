@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+
+    height: 50px;
+    background: darkslategrey;
+    color: aliceblue;
+    font-size: 25px;
+}
