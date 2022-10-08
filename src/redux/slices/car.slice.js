@@ -25,7 +25,6 @@ const create = createAsyncThunk(
     'carSlice/create',
     async (car, {rejectWithValue}) => {
         try {
-            debugger
             const {data} = await carService.create(car);
             return data;
         } catch (e) {
@@ -70,7 +69,6 @@ const carSlice = createSlice({
             .addCase(getAll.fulfilled, (state, action) => {
                 state.cars = action.payload;
                 state.loading = false;
-
             })
             .addCase(getAll.rejected, (state, action) => {
                 state.error = action.payload;

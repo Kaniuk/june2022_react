@@ -7,6 +7,7 @@ import './CarForm.css'
 
 const CarForm = () => {
     const {reset, register, handleSubmit, formState: {errors, isValid}, setValue} = useForm({mode: "all"});
+
     const dispatch = useDispatch();
     const {carForUpdate} = useSelector(state => state.carReducer);
 
@@ -20,7 +21,7 @@ const CarForm = () => {
     }, [carForUpdate?.id]);
 
 
-    const submit = async (car) => {
+    const submit = (car) => {
          carForUpdate ? dispatch(carActions.update(car)) : dispatch(carActions.create(car));
         reset();
     };
