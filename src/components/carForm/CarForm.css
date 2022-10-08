@@ -1,0 +1,45 @@
+.carForm {
+    display: flex;
+    flex-direction: column;
+
+    width: 35%;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background: aliceblue;
+}
+
+input:hover {
+    background: lightcyan;
+}
+
+.carForm button {
+    display: block;
+    margin: 0 auto;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow, transform;
+    background: radial-gradient(100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100%);
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0 -3px 0 rgb(58 65 111 / 50%);
+    padding: 0 45px;
+    border-radius: 6px;
+    color: #fff;
+    height: 48px;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.carForm button:hover {
+    box-shadow: 0 4px 8px rgb(45 35 66 / 40%), 0 7px 13px -3px rgb(45 35 66 / 30%), inset 0 -3px 0 #3c4fe0;
+    transform: translateY(-0.5px);
+}
+
+.carForm button:active {
+    box-shadow: inset 0 3px 7px #3c4fe0;
+}
